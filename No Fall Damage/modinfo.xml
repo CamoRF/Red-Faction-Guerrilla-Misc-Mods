@@ -1,0 +1,26 @@
+<Mod Name="No Fall Damage">
+  <Author>Camo</Author>
+  <Description>You will no longer take any fall damage. All other damage is still received.</Description>
+  <Changes>
+    <Edit File="data\misc.vpp\tweak_table.xtbl" LIST_ACTION="COMBINE_BY_FIELD:Name">
+	
+    <Tweak_Table_Entry>
+      <Name>Player_safe_fall_speed</Name>
+      <Value>1000</Value>
+      <Description>Falling speed below which the player does not take damage.</Description>
+      <_Editor>
+        <Category>Movement:Falling</Category>
+      </_Editor>
+    </Tweak_Table_Entry>
+    <Tweak_Table_Entry>
+      <Name>Player_fatal_fall_speed</Name>
+      <Value>1001</Value>
+      <Description>Falling speed at which a player dies on impact.</Description>
+      <_Editor>
+        <Category>Movement:Falling</Category>
+      </_Editor>
+    </Tweak_Table_Entry>
+	
+    </Edit>
+  </Changes>
+</Mod>

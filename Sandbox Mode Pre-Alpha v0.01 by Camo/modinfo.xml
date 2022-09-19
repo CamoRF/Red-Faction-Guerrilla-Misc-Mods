@@ -1,0 +1,800 @@
+<Mod Name="Sandbox Mode">
+  <Author>Camo, arrows and moneyl</Author>
+  <Description>Skips tutorial and you start a new game with all unlocks and missions available.</Description>
+  <Changes>
+	<Replace File="data\zonescript_terr01.vpp\terr01_tutorial.scriptx" NewFile="zonescript_terr01\terr01_tutorial.scriptx" />
+	<Replace File="data\zonescript_terr01.vpp\terr01_04_10_tool_tips.scriptx" NewFile="zonescript_terr01\terr01_04_10_tool_tips.scriptx" />
+	<Replace File="data\misc.vpp\mission_unlock.xtbl" NewFile="misc\mission_unlock.xtbl" />
+	<Edit File="data\misc.vpp\upgrades.xtbl" LIST_ACTION="COMBINE_BY_FIELD:Name">
+		<Upgrade>
+				<Name>sledgehammer</Name>
+				<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+					<Level>
+						<Cost>0</Cost>
+						<Value>1</Value>
+					</Level>
+				</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>remote_charges</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>2</Value>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>remote_charge_count</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>3</Value>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>4</Value>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>5</Value>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>6</Value>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>7</Value>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>8</Value>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>9</Value>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>10</Value>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>11</Value>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>12</Value>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>grinder</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>2</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+				</Level>
+			</Levels>
+
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>guns_of_tharsis_unlock1</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>	
+					<District_Liberated></District_Liberated>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>guns_of_tharsis_unlock2</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<District_Liberated></District_Liberated>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>guns_of_tharsis_complete</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<District_Liberated></District_Liberated>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>grinder_faster</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>grinder_explosive</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>arc_welder</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>2</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>arc_welder_3rd_arc</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>arc_welder_smart</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>rocket</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<District_Liberated></District_Liberated>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>2</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>rocket_multi</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+				<Level>
+					<Description>UPG_MULTI_ROCKETS</Description>
+					<Cost>0</Cost>
+					<Value>3</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>rocket_heat_seeking</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>personnel</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+					</Level>
+				</Levels>
+			</Upgrade>
+		
+		<Upgrade>
+			<Name>proximity_mine</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>2</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>proximity_mine_smart</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>jetpack</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<District_Liberated></District_Liberated>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>2</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>thermo_rocket</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<District_Liberated></District_Liberated>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>2</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>radiation</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>nano_rifle</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<District_Liberated></District_Liberated>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>2</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>pistol</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>nano_enhancer</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>player_armor</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+					<District_Liberated></District_Liberated>
+					</Level>
+				<Level>
+					<Cost>0</Cost>
+					<Value>2</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+					<District_Liberated></District_Liberated>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>salvage_collector</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>ore_bonus</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>safehouse_warp</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+					<District_Liberated></District_Liberated>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>singularity_increase</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+
+		<Upgrade>
+			<Name>sledgehammer1</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Show_Locked>False</Show_Locked>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>reconstructor</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>golden_hammer</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+		
+		<Upgrade>
+			<Name>sledgehammer3</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>4</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>sledgehammer4</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>5</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>sledgehammer5</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>6</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>sledgehammer6</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>7</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>sledgehammer7</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>8</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>sledgehammer8</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>9</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>sledgehammer9</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>10</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>sledgehammer10</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>11</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>sledgehammer11</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>12</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>sledgehammer12</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>13</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>sledgehammer13</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>14</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>sledgehammer14</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>15</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>backpack_thrust</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>backpack_fleetfoot</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>backpack_stealth</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>backpack_vision</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>backpack_commando</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>backpack_shockwave</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>backpack_heal</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>backpack_rhino</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+			
+		<Upgrade>
+			<Name>backpack_tremor</Name>
+			<Levels LIST_ACTION="COMBINE_BY_FIELD:Value">
+				<Level>
+					<Cost>0</Cost>
+					<Value>1</Value>
+					<Available>True</Available>
+					<Unlock_Action>Unlocked</Unlock_Action>
+					<Activity_Count>0</Activity_Count>
+				</Level>
+			</Levels>
+		</Upgrade>
+	</Edit>
+</Changes>
+</Mod>

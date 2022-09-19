@@ -1,0 +1,44 @@
+<Mod Name="No Morale Loss v1.01">
+  <Author>TimeFlier - Camo</Author>
+  <Description>People dying won't cause a loss in morale.</Description>
+  <Changes>
+	<Edit File="data/misc.vpp/tweak_table.xtbl" LIST_ACTION="COMBINE_BY_FIELD:Name">
+		<Tweak_Table_Entry>
+			<Name>Player_killed_civilian_morale_delta</Name>
+			<Value>0</Value>
+			<_Editor>
+				<Category>Human Death Penalties</Category>
+				</_Editor>
+			</Tweak_Table_Entry>
+		<Tweak_Table_Entry>
+			<Name>Player_killed_guerilla_morale_delta</Name>
+			<Value>0</Value>
+			<_Editor>
+				<Category>Human Death Penalties</Category>
+				</_Editor>
+			</Tweak_Table_Entry>
+		<Tweak_Table_Entry>
+			<Name>Player_killed_guerilla_raid_morale_delta</Name>
+			<Value>0</Value>
+			<Description>This is the value we will adjust the morale by if the player kills someone during a raid</Description>
+			<_Editor>
+				<Category>Human Death Penalties</Category>
+				</_Editor>
+			</Tweak_Table_Entry>
+		<Tweak_Table_Entry>
+			<Name>EDF_killed_civilian_morale_delta</Name>
+			<Value>0</Value>
+			<_Editor>
+				<Category>Human Death Penalties</Category>
+				</_Editor>
+			</Tweak_Table_Entry>
+		<Tweak_Table_Entry>
+			<Name>EDF_killed_guerilla_morale_delta</Name>
+			<Value>0</Value>
+			<_Editor>
+				<Category>Human Death Penalties</Category>
+				</_Editor>
+			</Tweak_Table_Entry>
+  </Edit>
+  </Changes>
+</Mod>

@@ -1,0 +1,7 @@
+<Mod Name="Morale and EDF Bar Colour Red v1.01">
+  <Author>Camo, TimeFlier & moneyl</Author>
+  <Description>Blue EDF bar, Red Morale Bar</Description>
+  <Changes>
+	<Replace File="data/misc.vpp/rfg_ui_globals.lua" NewFile="misc/rfg_ui_globals.lua" />
+  </Changes>
+</Mod>
